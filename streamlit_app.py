@@ -4,7 +4,7 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 
-streamlit.title('My parents 13 new healthy diner')
+streamlit.title('My parents 14 new healthy diner')
 
 streamlit.header('Breakfast Favorites')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -75,7 +75,7 @@ if streamlit.button('Add a fruit to the list'):
         back_from_function = insert_row_snowflake(add_my_fruit)
         streamlit.text(back_from_function)
 
-streamlit.write('Thank you for adding ', add_my_fruit)
+# streamlit.write('Thank you for adding ', add_my_fruit)
 
 
 
