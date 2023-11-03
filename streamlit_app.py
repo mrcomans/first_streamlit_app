@@ -1,7 +1,7 @@
 import streamlit
 import snowflake.connector
 
-streamlit.title('My parents 5 new healthy diner')
+streamlit.title('My parents 6 new healthy diner')
 
 streamlit.header('Breakfast Favorites')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -47,6 +47,6 @@ streamlit.dataframe(my_data_rows)
 # streamlit.header("What fruit would you like to add?")
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'jackfruit');
 streamlit.write('Thank you for adding ', add_my_fruit);
-my_cur.execute("insert into fruit_load_list values ('From streamlit')")
+my_cur.execute("insert into fruit_load_list values ('From streamlit')");
 
 
